@@ -30,6 +30,22 @@ body{
     font-family: var(--fonte-padrao);
 }
 
+div.video{
+    background-color: var(--cor5);
+    padding: 20px;
+    margin: 0px 0px 30px 0px;
+    position: relative;
+    padding-bottom: 54.2%;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
 header{
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
@@ -83,7 +99,7 @@ main{
     background-color: white;
     margin: auto;
     padding: 20px;
-    min-width: 300px;
+    min-width: 260px;
     max-width: 1000px;
     margin-bottom: 30px;
     border-bottom-left-radius: 15px;
@@ -133,6 +149,63 @@ main a:hover{
     color: var(--cor4);
 }
 
+a.externo::after{
+    content: '\1F517';
+}
+
 main img{
     width: 100%;
 }
+
+main img.pequeno{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+figcaption{
+    text-align: center;
+    padding-top: 5px;
+    font-size: 0.8em;
+}
+
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+aside > h3{
+    background-color: var(--cor5);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul{
+    columns: 2;
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 0.8em;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
